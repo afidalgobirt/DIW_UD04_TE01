@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Migas Hermanas</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <main id="pedidoContent">
+            <header class="mainHeader">
+                <label for="language">Idioma: 
+                    <select name="language">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                    </select>
+                </label>
+                <img src="img/logotipo.png" alt="Logo de Migas Hermanas"/>
+            </header>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="quienes_somos.html">QUI&Eacute;NES SOMOS</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="realizar_pedido.html">REALIZAR PEDIDO</a></li>
+                    <li><a href="contactar.html">CONT&Aacute;CTANOS</a></li>
+                </ul>
+            </nav>
+            <section class="mainSection">
+                <header class="mainSectionHeader">
+                    <img src="img/cabecera_dos.jpg" class="headerImg" alt="Imagen de productos artesanos"/>
+                    <div></div>
+                    <h2>PEDIDO</h2>
+                    <h3>Inicio &nbsp;/&nbsp; <span>Realizar pedido</span></h3>
+                </header>
+                <section class="orderFormSection">
+                    <form>
+                        <header>
+                            <h2>REALIZA TU PEDIDO</h2>
+                            <article>
+                                <label for="name">Nombre</label>
+                                <input type="text" name="name"/>
+                                <label for="surnames">Apellidos</label>
+                                <input type="text" name="surnames"/>
+                                <label for="email">E-mail</label>
+                                <input type="text" name="email"/>
+                            </article>
+                        </header>
+                        <article class="chooseProductsList">
+                            <h3>¿Qu&eacute; productos quiere comprar?</h3>
+                            <article class="productTypeCheckList">
+                                <h4>Productos salados</h4>
+                                <label><input type="checkbox"/>Pan de trigo</label>
+                                <label><input type="checkbox"/>Pan de trigo del pa&iacute;s</label>
+                                <label><input type="checkbox"/>Pan de centeno</label>
+                                <label><input type="checkbox"/>Pan integral sin sal</label>
+                                <label><input type="checkbox"/>Pan de cereales</label>
+                                <label><input type="checkbox"/>Pan de ajo</label>
+                                <label><input type="checkbox"/>Pan de nueces</label>
+                                <label><input type="checkbox"/>Pan de quinoa</label>
+                                <label><input type="checkbox"/>Pan de cebolla</label>
+                                <label><input type="checkbox"/>Pastel</label>
+                            </article>
+                            <article class="productTypeCheckList">
+                                <h4>Productos dulces</h4>
+                                <label><input type="checkbox"/>Croissant</label>
+                                <label><input type="checkbox"/>Donut</label>
+                                <label><input type="checkbox"/>Macarons</label>
+                                <label><input type="checkbox"/>Ensaimadas</label>
+                                <label><input type="checkbox"/>Napolitanas</label>
+                            </article>
+                        </article>
+                        <footer class="formFooter">
+                            <label><input type="checkbox"/>Acepto el aviso legal</label>
+                            <input type="submit" id="mainOrderBtn" value="Realizar pedido"/>
+                        </footer>
+                    </form>
+                </section>
+            </section>
+            <footer class="mainFooter">
+                <article class="contactArticle">
+                    <h4>Contacta con nosotros</h4>
+                    <p>
+                        <a>www.migashermanas.com</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a>info@migashermanas.com</a>
+                    </p>
+                    <form id="contactForm">
+                        <article>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name"/>
+                            <label fro="surnames">Apellidos</label>
+                            <input type="text" name="surnames"/>
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email"/>
+                            <label for="textareaFooter">Comentarios</label>
+                            <textarea form="contactForm" name="textareaFooter"></textarea>
+                        </article>
+                        <footer class="formFooter">
+                            <label><input type="checkbox"/>Acepto el aviso legal</label>
+                            <input type="submit" value="Enviar"/>
+                        </footer>
+                    </form>
+                </article>
+                <article class="socialFooter">
+                    <h4>S&iacute;guenos en:</h4>
+                    <a href="https://es-es.facebook.com/"><img src="img/facebook.png" alt="Logo de Facebook"/></a>
+                    <a href="https://twitter.com/?lang=es"><img src="img/001-twitter.png" alt="Logo de Twitter"/></a>
+                    <a href="https://www.instagram.com/?hl=es"><img src="img/002-instagram.png" alt="Logo de Instagram"/></a>
+                </article>
+                <article class="locationFooter">
+                    <h4>Localizaci&oacute;n</h4>
+                    <p>Av. Luis Espada, nº56 bajo, 32600 Verín, provincia de Ourense</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.798633747979!2d-7.438973784226498!3d41.94017817921742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3aea75c2c9061b%3A0x94b08593af4c7115!2sAv.%20Luis%20Espada%2C%2032600%20Ver%C3%ADn%2C%20Ourense!5e0!3m2!1ses!2ses!4v1639227787907!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+                </article>
+            </footer>
+        </main>
+    </body>
+</html>
