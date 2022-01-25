@@ -1,0 +1,43 @@
+// Tamaños de pantalla
+$tiny-screen: 500px;
+$small-screen:900px;
+$normal-screen:1200px;
+$big-screen: 1400px;
+
+// Colores.
+$footer-color: #632A16;
+$main-orange-color: #F8A14E;
+
+// Tipo de fuente principal.
+$mainFontFamily: Arial, Helvetica, sans-serif;
+
+// Establece el tipo de fuente al enviado por parametro
+// solo cuando no es igual al tipo de fuente principal.
+// Considero que no tiene sentido pero no se me ocurre
+// ninguna implementación práctica.
+@mixin font-family($font-family) {
+    @if $font-family != $mainFontFamily {
+        font-family: $font-family;
+    }
+}
+
+// mixin sin parámetros para crear un contenedor
+// flex con horientación vertical.
+@mixin verticalContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+// mixin con parámetros para crear un botón con bordes
+// redondos. La propiedad border-radius está hardcodeada
+// porque no hay forma de asignar el valor 1rem / 1rem a
+// una variable, lo interpreta como una división y asigna 1.
+@mixin roundedButton($background-color, $color, $padding: 0.5rem 1rem,
+                            $font-weight: normal, $text-decoration: none) {
+    background-color: $background-color;
+    color: $color;
+    border-radius: 1rem / 1rem;
+    padding: $padding;
+    font-weight: $font-weight;
+    text-decoration: $text-decoration;
+}
